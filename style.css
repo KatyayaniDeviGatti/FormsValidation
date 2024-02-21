@@ -1,0 +1,35 @@
+.input{
+    width: 100%;
+}
+.bg-container{
+    width: 500px;
+    border: 1px solid black;
+    padding: 30px;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
+}
+.errorMsg{
+    color: red;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactErr{
+    color: red;
+}
+.confirmpasswordErr{
+    color: red;
+}
+.nameErr{
+    color: red;
+}
+.passwordErr{
+    color: red;
+}
+.emailErr{
+    color: red;
+}
+.radioErrMsg{
+    color: red;
+}

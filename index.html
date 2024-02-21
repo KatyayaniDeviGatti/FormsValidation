@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Validation</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class=" bg-container">
+        <h3 class="text-center mb-3">User Registration Form</h3>
+        <form class="myForm" id="myForm">
+            <p class="errorMsg" id="errorMsg"></p>
+
+            <div class="d-flex flex-column mb-3">
+                <label for="name-input" class="mb-2 ">Full Name</label>
+                <input type="text" id="name-input" class="input form-control">
+                <p id="nameErr" class="nameErr"></p>
+            </div>
+
+            <div class="d-flex flex-column mb-3">
+                <label for="email-input" class="mb-2">Email</label>
+                <input type="text" id="email-input" class="input form-control">
+                <p id="emailErr" class="emailErr"></p>
+            </div>
+
+            <div class="d-flex flex-column">
+                <label for="contact-input" class="mb-2">Contact Number</label>
+                <input type="text" id="contact-input" class="input form-control">
+                <p id="contactErr" class="contactErr"></p>
+            </div>
+
+            <div class="d-flex flex-column mb-3">
+                <!-- <p id="selectedErrMsg"></p> -->
+                <label class="mb-2">Working Status</label>
+                <select id="select" name="form-select" required class="form-select"> 
+                    <option value="">Choose an option</option>
+                    <option value="Active">Active</option>
+                    <option value="InActive">InActive</option>
+                </select>
+            </div>
+
+            <label>Gender</label>
+            <p id="radioErrMsg" class="radioErrMsg"></p>
+            <div  class="d-flex flex-row mb-3">
+                <input type="radio" value="Male" id="genderMale" name="gender" style="margin-right: 5px;">
+                <label for="genderMale" style="margin-right: 10px;">Male</label>
+                <input type="radio" value="Female" id="genderFemale" name="gender" style="margin-right: 5px;">
+                <label for="genderFemale" >Female</label>
+            </div>
+
+            <div class="d-flex flex-column mb-3">
+                <label for="password" class="mb-2">Password</label>
+                <input type="password" id="password" class="input form-control">
+                <p id="passwordErr" class="passwordErr"></p>
+            </div>
+
+            <div class="d-flex flex-column mb-3">
+                <label for="confirm-password" class="mb-2">Confirm Password</label>
+                <input type="password" id="confirm-password" class="input form-control">
+                <p id="confirmpasswordErr" class="confirmpasswordErr"></p>
+            </div>
+
+            <div class="d-flex flex-row mb-3">
+                <input type="checkbox" value="check" id="check" onclick="enable()">
+                <label class="ms-2">I agree to the terms and conditions</label>
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary" onclick="onSubmit()" id="btn" disabled>Submit</button>
+            </div>
+
+            
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
